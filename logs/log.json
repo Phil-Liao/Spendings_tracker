@@ -1,0 +1,28 @@
+{
+    "logs": [
+        [
+            "[LOGS CLEARED] Logs cleared.",
+            "10/05/2025 02:55:14"
+        ],
+        [
+            "[LOG IN] User logged in.",
+            "10/05/2025 04:21:10"
+        ],
+        [
+            "[DATA RETREIVED] Data retreived from Google Sheets.",
+            "10/05/2025 04:21:11"
+        ],
+        [
+            "[SUBMITTED] Submitted the spendings form.",
+            "10/05/2025 04:21:25"
+        ],
+        [
+            "[LOG IN] User logged in.",
+            "29/08/2025 16:37:05"
+        ],
+        [
+            "[DATA RETREIVED] Data retreived from Google Sheets.",
+            "29/08/2025 16:37:07"
+        ]
+    ]
+}

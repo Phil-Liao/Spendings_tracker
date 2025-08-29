@@ -1,0 +1,26 @@
+{
+    "spending_types": [
+        "Housing",
+        "Transportation",
+        "Food",
+        "Utilities",
+        "Insurance",
+        "Debt Payments",
+        "Healthcare",
+        "Personal Care",
+        "Entertainment",
+        "Shopping",
+        "Savings",
+        "Education",
+        "Miscellaneous"
+    ],
+    "income_types": [
+        "Salary/Wages",
+        "Self-Employment Income",
+        "Investment Income",
+        "Rental Income",
+        "Government Benefits",
+        "Gifts and Grants",
+        "Other Income"
+    ]
+}
