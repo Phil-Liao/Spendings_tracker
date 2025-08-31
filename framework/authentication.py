@@ -22,9 +22,9 @@ def authenticate_user() -> bool:
     )
     result = oauth2.authorize_button(
         
-        
+
         "Sign in with Google",
-        redirect_uri="https://spendingstracker.streamlit.app/",
+        redirect_uri="https://spendings-tracker.streamlit.app/",
         scope="openid email profile",
         key="google"
     )
@@ -40,8 +40,13 @@ def authenticate_user() -> bool:
             st.error("Incorrect password. Please try again.")
 
     if result and "token" in result:
-        st.session_state["authenticated"] = True
-        st.success("Authenticated with Google!")
-        return True
+        # Restrict access to only cheweiphil@gmail.com
+        user_email = result.get("user", {}).get("email") or result.get("email")
+        if user_email == st.secrets.login.email:
+            st.session_state["authenticated"] = True
+            st.success("Authenticated with Google!")
+            return True
+        else:
+            st.error("Only certain accounts is allowed to sign in with Google.")
 
     return False
