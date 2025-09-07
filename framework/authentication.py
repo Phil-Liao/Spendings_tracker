@@ -47,6 +47,6 @@ def authenticate_user() -> bool:
             st.success("Authenticated with Google!")
             return True
         else:
-            st.error("Only certain accounts is allowed to sign in with Google.")
+            st.error(f"Only certain accounts is allowed to sign in with Google. Received email: {user_email}")
 
     return False
