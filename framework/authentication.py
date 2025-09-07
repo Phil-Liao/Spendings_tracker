@@ -24,7 +24,7 @@ def authenticate_user() -> bool:
         
 
         "Sign in with Google",
-        redirect_uri="https://spendings-tracker.streamlit.app/",
+        redirect_uri="https://spendingstracker.streamlit.app/",
         scope="openid email profile",
         key="google"
     )
